@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Personal Portfolio</title>
+  <title>Joyannah Pico | Personal Portfolio</title>
   <style>
     :root {
-      --primary: #2563eb;
+      --primary: #cc0033; /* Rutgers Scarlet */
+      --primary-hover: #990024;
       --text: #1f2937;
       --bg: #f9fafb;
       --card-bg: #ffffff;
@@ -26,19 +27,41 @@
     }
     header {
       background-color: var(--card-bg);
-      padding: 30px;
+      padding: 32px;
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .rbs-logo {
+      max-height: 50px;
+      width: auto;
     }
     h1 {
-      margin-top: 0;
+      margin: 0;
       color: #111827;
+      font-size: 2.2rem;
+    }
+    .sub-title {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 4px;
+      margin-bottom: 12px;
     }
     .bio {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       color: #4b5563;
-      font-weight: 500;
+      margin: 0;
     }
     section {
       background-color: var(--card-bg);
@@ -61,8 +84,9 @@
       list-style: none;
     }
     .skill-tag {
-      background-color: #eff6ff;
+      background-color: #fef2f2;
       color: var(--primary);
+      border: 1px solid #fecaca;
       padding: 6px 14px;
       border-radius: 20px;
       font-weight: 600;
@@ -98,9 +122,13 @@
     
     <!-- 1. Personal Statement Section -->
     <header>
-      <h1>Your Name</h1>
+      <div class="header-top">
+        <h1>Joyannah Pico</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Rutgers_Business_School_logo.png" alt="Rutgers Business School Logo" class="rbs-logo" />
+      </div>
+      <div class="sub-title">Finance Major & Animal Science Minor | Class of 2029</div>
       <p class="bio">
-        Driven business technology enthusiast specializing in data-driven decision-making and digital strategy to bridge the gap between business management and modern technical solutions.
+        Driven Finance student at Rutgers Business School blending analytical acumen with creative design to solve complex business challenges.
       </p>
     </header>
 
@@ -108,12 +136,13 @@
     <section>
       <h2>Skills</h2>
       <ul class="skills-list">
-        <li class="skill-tag">Python</li>
-        <li class="skill-tag">SQL & Data Analysis</li>
+        <li class="skill-tag">Microsoft Excel</li>
+        <li class="skill-tag">Financial Analysis</li>
+        <li class="skill-tag">Digital Art</li>
+        <li class="skill-tag">Procreate</li>
+        <li class="skill-tag">Canva</li>
         <li class="skill-tag">Git & GitHub</li>
         <li class="skill-tag">HTML & CSS</li>
-        <li class="skill-tag">Project Management</li>
-        <li class="skill-tag">Business Strategy</li>
       </ul>
     </section>
 
@@ -123,20 +152,20 @@
       
       <div class="project-card">
         <h3>Personal Portfolio Website</h3>
-        <p>A clean, responsive personal portfolio hosted on GitHub Pages showcasing personal branding, technical skills, and key projects.</p>
+        <p>A personal branding portfolio hosted on GitHub Pages highlighting academic background, business skills, and creative technical capabilities.</p>
         <a href="https://github.com/yourusername/portfolio" class="project-link" target="_blank">View on GitHub &rarr;</a>
       </div>
 
       <div class="project-card">
-        <h3>Data Analysis & Visualization Dashboard</h3>
-        <p>Analyzed multi-source retail datasets using Python and pandas to surface consumer trends and present insights via interactive charts.</p>
-        <a href="https://github.com/yourusername/data-analysis-demo" class="project-link" target="_blank">View Code &rarr;</a>
+        <h3>Digital Art & Design Showcase</h3>
+        <p>A curated collection of visual designs and digital assets created using Procreate and Canva for branding and creative projects.</p>
+        <a href="https://github.com/yourusername/digital-art-portfolio" class="project-link" target="_blank">View Project &rarr;</a>
       </div>
 
       <div class="project-card">
-        <h3>Business Strategy Case Study</h3>
-        <p>Evaluated digital transformation strategies for enterprise brands, synthesizing market research and financial projections into actionable recommendations.</p>
-        <a href="https://github.com/yourusername/strategy-case-study" class="project-link" target="_blank">View Project &rarr;</a>
+        <h3>Financial Modeling & Excel Analysis</h3>
+        <p>Developed analytical spreadsheets using Microsoft Excel to organize datasets, perform financial calculations, and visualize business trends.</p>
+        <a href="https://github.com/yourusername/excel-finance-analysis" class="project-link" target="_blank">View Project &rarr;</a>
       </div>
     </section>
 
