@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Portfolio</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --text: #1f2937;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    header {
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+    }
+    h1 {
+      margin-top: 0;
+      color: #111827;
+    }
+    .bio {
+      font-size: 1.15rem;
+      color: #4b5563;
+      font-weight: 500;
+    }
+    section {
+      background-color: var(--card-bg);
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--primary);
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+    .skill-tag {
+      background-color: #eff6ff;
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .project-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .project-card:last-child {
+      margin-bottom: 0;
+    }
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .project-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- 1. Personal Statement Section -->
+    <header>
+      <h1>Your Name</h1>
+      <p class="bio">
+        Driven business technology enthusiast specializing in data-driven decision-making and digital strategy to bridge the gap between business management and modern technical solutions.
+      </p>
+    </header>
 
+    <!-- 2. Skills Section -->
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li class="skill-tag">Python</li>
+        <li class="skill-tag">SQL & Data Analysis</li>
+        <li class="skill-tag">Git & GitHub</li>
+        <li class="skill-tag">HTML & CSS</li>
+        <li class="skill-tag">Project Management</li>
+        <li class="skill-tag">Business Strategy</li>
+      </ul>
+    </section>
+
+    <!-- 3. Projects Section -->
+    <section>
+      <h2>Projects</h2>
+      
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>A clean, responsive personal portfolio hosted on GitHub Pages showcasing personal branding, technical skills, and key projects.</p>
+        <a href="https://github.com/yourusername/portfolio" class="project-link" target="_blank">View on GitHub &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Data Analysis & Visualization Dashboard</h3>
+        <p>Analyzed multi-source retail datasets using Python and pandas to surface consumer trends and present insights via interactive charts.</p>
+        <a href="https://github.com/yourusername/data-analysis-demo" class="project-link" target="_blank">View Code &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Business Strategy Case Study</h3>
+        <p>Evaluated digital transformation strategies for enterprise brands, synthesizing market research and financial projections into actionable recommendations.</p>
+        <a href="https://github.com/yourusername/strategy-case-study" class="project-link" target="_blank">View Project &rarr;</a>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
