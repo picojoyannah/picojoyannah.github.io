@@ -1,174 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joyannah Pico | Personal Portfolio</title>
-  <style>
-    :root {
-      --primary: #cc0033; /* Rutgers Scarlet */
-      --primary-hover: #990024;
-      --text: #1f2937;
-      --bg: #f9fafb;
-      --card-bg: #ffffff;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background-color: var(--bg);
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    header {
-      background-color: var(--card-bg);
-      padding: 32px;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 24px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      margin-bottom: 16px;
-    }
-    .rbs-logo {
-      max-height: 50px;
-      width: auto;
-    }
-    h1 {
-      margin: 0;
-      color: #111827;
-      font-size: 2.2rem;
-    }
-    .sub-title {
-      color: var(--primary);
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-top: 4px;
-      margin-bottom: 12px;
-    }
-    .bio {
-      font-size: 1.05rem;
-      color: #4b5563;
-      margin: 0;
-    }
-    section {
-      background-color: var(--card-bg);
-      padding: 28px;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 24px;
-    }
-    h2 {
-      margin-top: 0;
-      color: var(--primary);
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
-    }
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      padding: 0;
-      list-style: none;
-    }
-    .skill-tag {
-      background-color: #fef2f2;
-      color: var(--primary);
-      border: 1px solid #fecaca;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-    .project-card {
-      border: 1px solid #e5e7eb;
-      border-radius: 6px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .project-card:last-child {
-      margin-bottom: 0;
-    }
-    .project-card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-    }
-    .project-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .project-link:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyannah Pico | Academic & Professional Portfolio</title>
+    <style>
+        :root {
+            --primary-red: #cc0033;
+            --dark-gray: #1f2937;
+            --light-bg: #f9fafb;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --text-muted: #4b5563;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 3px solid var(--primary-red);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .rbs-logo {
+            max-width: 280px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--dark-gray);
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            color: var(--primary-red);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .personal-statement {
+            background-color: #fcf0f2;
+            border-left: 4px solid var(--primary-red);
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+            text-align: left;
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-red);
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .edu-card {
+            background: #f9fafb;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .edu-card strong {
+            display: block;
+            color: var(--dark-gray);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            padding: 0;
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .skill-badge {
+            background: #f3f4f6;
+            color: var(--dark-gray);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #d1d5db;
+        }
+
+        .project-card {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin: 0 0 0.3rem 0;
+        }
+
+        .project-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.4rem 0.9rem;
+            border-radius: 4px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            transition: background-color 0.2s;
+        }
+
+        .btn-link:hover {
+            background-color: #a00028;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    
-    <!-- 1. Personal Statement Section -->
-    <header>
-      <div class="header-top">
-        <h1>Joyannah Pico</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Rutgers_Business_School_logo.png" alt="Rutgers Business School Logo" class="rbs-logo" />
-      </div>
-      <div class="sub-title">Finance Major & Animal Science Minor | Class of 2029</div>
-      <p class="bio">
-        Driven Finance student at Rutgers Business School blending analytical acumen with creative design to solve complex business challenges.
-      </p>
-    </header>
 
-    <!-- 2. Skills Section -->
-    <section>
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li class="skill-tag">Microsoft Excel</li>
-        <li class="skill-tag">Financial Analysis</li>
-        <li class="skill-tag">Digital Art</li>
-        <li class="skill-tag">Procreate</li>
-        <li class="skill-tag">Canva</li>
-        <li class="skill-tag">Git & GitHub</li>
-        <li class="skill-tag">HTML & CSS</li>
-      </ul>
-    </section>
+    <div class="container">
+        <!-- HEADER & PERSONAL STATEMENT -->
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rutgers_Business_School_logo.svg/1200px-Rutgers_Business_School_logo.svg.png" alt="Rutgers Business School Logo" class="rbs-logo">
+            <h1>Joyannah Pico</h1>
+            <div class="subtitle">Rutgers Business School | Pre-Dental Track</div>
+            
+            <div class="personal-statement">
+                "As an accounting major on the pre-dental track at Rutgers NB Business School, I'm curious about applying business principles within healthcare. I aim to develop a strong foundation in leadership, organization, and teamwork as I prepare for a career in dentistry that combines accounting insight with patient care."
+            </div>
+        </header>
 
-    <!-- 3. Projects Section -->
-    <section>
-      <h2>Projects</h2>
-      
-      <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>A personal branding portfolio hosted on GitHub Pages highlighting academic background, business skills, and creative technical capabilities.</p>
-        <a href="https://github.com/yourusername/portfolio" class="project-link" target="_blank">View on GitHub &rarr;</a>
-      </div>
+        <!-- ACADEMIC PROFILE -->
+        <section class="section">
+            <h2>🎓 Academic Background</h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <strong>Institution</strong>
+                    Rutgers University – New Brunswick
+                </div>
+                <div class="edu-card">
+                    <strong>Major</strong>
+                    Accounting (Pre-Dental Track)
+                </div>
+                <div class="edu-card">
+                    <strong>Minor</strong>
+                    Animal Science
+                </div>
+                <div class="edu-card">
+                    <strong>Expected Graduation</strong>
+                    Spring 2029
+                </div>
+            </div>
+        </section>
 
-      <div class="project-card">
-        <h3>Digital Art & Design Showcase</h3>
-        <p>A curated collection of visual designs and digital assets created using Procreate and Canva for branding and creative projects.</p>
-        <a href="https://github.com/yourusername/digital-art-portfolio" class="project-link" target="_blank">View Project &rarr;</a>
-      </div>
+        <!-- TECHNICAL & PROFESSIONAL SKILLS -->
+        <section class="section">
+            <h2>🛠️ Skills & Competencies</h2>
+            <ul class="skills-list">
+                <li class="skill-badge">📊 Excel Spreadsheets</li>
+                <li class="skill-badge">🎨 Canva</li>
+                <li class="skill-badge">✏️ Procreate</li>
+                <li class="skill-badge">✒️ Calligraphy</li>
+                <li class="skill-badge">🗂️ Organization</li>
+                <li class="skill-badge">👥 Leadership</li>
+            </ul>
+        </section>
 
-      <div class="project-card">
-        <h3>Financial Modeling & Excel Analysis</h3>
-        <p>Developed analytical spreadsheets using Microsoft Excel to organize datasets, perform financial calculations, and visualize business trends.</p>
-        <a href="https://github.com/yourusername/excel-finance-analysis" class="project-link" target="_blank">View Project &rarr;</a>
-      </div>
-    </section>
+        <!-- PROJECTS & LEADERSHIP -->
+        <section class="section">
+            <h2>🚀 Projects & Leadership Experience</h2>
 
-  </div>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-title">Future Business Leaders of America (FBLA)</div>
+                <div class="project-meta">
+                    <strong>Role:</strong> President | <strong>Term:</strong> Aug 2024 – May 2025 | <em>Associated with Harvest Christian Academy Guam</em>
+                </div>
+                <ul>
+                    <li>Led 80+ students to raise over $23,000 for Harvest House, supporting foster youth services across Guam.</li>
+                    <li>Managed partnerships with 40 local businesses, expanding access to affordable meals and driving record-breaking community engagement.</li>
+                    <li>Oversaw operations of an all-female executive board of six, coordinating events, fundraising, and external relations.</li>
+                </ul>
+                <a href="https://youtu.be/dpApzhE3m8c?si=JDGBtiwv3Yj80lcL" target="_blank" class="btn-link">▶ Watch FBLA Video</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-title">Academic Achievement: Rutgers Dean's List</div>
+                <div class="project-meta">
+                    <strong>Honor:</strong> Dean's List Distinction | <strong>Term:</strong> Fall 2025 | <em>Rutgers Business School</em>
+                </div>
+                <ul>
+                    <li>Recognized for exceptional academic performance and maintaining top-tier GPA standing during the Fall 2025 term.</li>
+                </ul>
+                <a href="https://lnkd.in/p/eTSshiW4" target="_blank" class="btn-link">🔗 View Verification & Referral Link</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Joyannah Pico | Built for GitHub Portfolio</p>
+        </footer>
+    </div>
+
 </body>
 </html>
+    
